@@ -14,7 +14,13 @@ namespace ConsoleApplication1
         {
             System.Console.WriteLine("Hola Mundo!");
             System.Console.WriteLine(""+ num);
+            Fibonacci n = new Fibonacci();
+            System.Console.WriteLine("El número de Fibonacci 1 es: " + n.calcular(1));
+            System.Console.WriteLine("El número de Fibonacci 1 es: " + n.calcular(2));
+            System.Console.WriteLine("El número de Fibonacci 1 es: " + n.calcular(7));
             System.Console.ReadKey();
+            
+
         }
     }
 }
