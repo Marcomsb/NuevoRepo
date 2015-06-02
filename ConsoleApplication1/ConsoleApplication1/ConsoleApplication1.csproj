@@ -48,6 +48,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Base_Datos\Base_Datos.csproj">
+      <Project>{24c5bae4-a62a-497c-8ca2-16d10cd19ac9}</Project>
+      <Name>Base_Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Calculos\Calculos.csproj">
       <Project>{bb1cf35b-7ff4-4377-a6d9-4db7d488e244}</Project>
       <Name>Calculos</Name>
