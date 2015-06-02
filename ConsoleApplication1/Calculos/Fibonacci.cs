@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
     public class Fibonacci
     {
+        private int control = 0;
+        private int Maximo = 0;
         public int calcular(int entero)
         {
 
@@ -33,7 +35,32 @@ using System.Threading.Tasks;
                 result.Add(calcular(obj));
                
             } return result;
-        } 
+        }
+ 
+        
+    
+    public int AdivinandoElMaximoFibonacciQuePuedopCalcular(int entero){
+        try{
+            
+    //♥♥♥ muaaaaaa....
+            while (control != 1)
+            {
+                ++Maximo;
+                return calcular(entero - 2) + calcular(entero - 1);
+                
+            }
+            }
+           
+        catch(Exception ex){
+            control = 0;
+            
+            Console.WriteLine(ex.Message);
+}
+        finally{
+            Console.WriteLine(Maximo);
+        }
+        return Maximo;
     }
+   }
 
 

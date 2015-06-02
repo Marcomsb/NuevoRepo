@@ -31,7 +31,8 @@ namespace ConsoleApplication1
             Base.Agregar(4);
             int cantidad = Base.ObtenerCantidad();
             Console.WriteLine("La Cantidad en la Base es de: "+cantidad + " elementos");
-
+            int maximo = CalculaFibonacci.AdivinandoElMaximoFibonacciQuePuedopCalcular(1);
+            Console.WriteLine("El número máximo del Fibo es: " + cantidad + " elementos");
             //Ejemplo de Fibonacci
             ArrayFibo.Add(4);
             ArrayFibo.Add(6);
@@ -46,7 +47,7 @@ namespace ConsoleApplication1
             Console.WriteLine("Resultado de Fibonacci");
             PrintValues(CalculaFibonacci.calculaArray(ArrayFibo));
             PrintValues(CalculaFibonacci.calculaArray(numbers));
-            
+            PrintValues(CalculaFibonacci.calculaArray(ArrayFibo));
 
             System.Console.ReadKey();
             
