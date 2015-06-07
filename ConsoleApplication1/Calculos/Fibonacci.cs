@@ -45,14 +45,18 @@ using System.Threading.Tasks;
     //♥♥♥ muaaaaaa....
             while (control != 1)
             {
+                
                 ++Maximo;
-                return calcular(entero - 2) + calcular(entero - 1);
+                Console.WriteLine(Maximo);
+                calcular(Maximo);
+                
                 
             }
-            }
+           }
            
         catch(Exception ex){
             control = 0;
+            Console.WriteLine("El número máximo alcanzado por el Fibonacci es: " + Maximo);
             
             Console.WriteLine(ex.Message);
 }
